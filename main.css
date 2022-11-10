@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Chomsky;
+    src: url("Chomsky.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Cheltenham;
+    src: url("CheltenhamBT-Roman.otf") format("opentype");
+}
+@font-face {
+    font-family: Cheltenham;
+    src: url("CheltenhamBT-BoldHeadline.otf") format("opentype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: Cheltenham;
+    src: url("CheltenhamBT-Italic.otf") format("opentype");
+    font-style: italic;
+}
+@font-face {
+    font-family: Cheltenham;
+    src: url("CheltenhamBT-BoldItalic.otf") format("opentype");
+    font-style: italic;
+    font-weight: bold;
+}
+
+body {
+    background-color: #e0e0e0;
+}
+p {
+    font-family: Cheltenham;
+    font-size: 20px;
+}
+#newspaper-page-one {
+    width: 900px;
+    height: 1500px;
+    background-color: white;
+    margin:auto;
+}
+.page-wrapper {
+    height: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%; 
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.page-header {
+    height: 8%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 5fr 1fr;
+    align-items: center;
+}
+.header-slogan {
+    text-align: center;
+    margin-top:0px;
+    margin-bottom:15px;
+    border:1px solid black;
+}
+.newspaper-name {
+    vertical-align:middle;
+    text-align: center;
+    font-family: "Chomsky";
+    font-size: 80px;
+    margin:0px;
+}
+.header-weather h5 {
+    text-align: center;
+    font-size: 12px;
+    margin-top:10px;
+    margin-bottom: 5px;
+}
+.header-weather p {
+    font-size: 9px;
+    margin-top:5px;
+    margin-bottom: 0 px;
+}
+.volume-date {
+    border-top:1px solid black;
+    border-bottom: 2px solid black;
+    grid-column-end: span 3;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.volume-date p {
+    margin:0px;
+}
+.title {
+    width:100%;
+    font-family: Cheltenham;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 19px;
+    text-align: center;
+}
+.article {
+    column-count: 5; 
+    font-size:17px;
+}
+div.article-heading div{
+    margin:auto;
+    border:1px solid gray;
+    width: 80%;
+    border-radius: 2px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+div.article-heading h3{
+    font-family: Cheltenham;
+    text-align: center;
+    margin:0px;
+}
